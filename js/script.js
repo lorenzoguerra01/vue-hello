@@ -3,7 +3,7 @@
 // Bonus:
 // Aggiungere alla pagina un’immagine, presa anch’essa da un data.
 
-import {isRandomImage, isRanDOMImage} from './utility.js';
+import { isRandomImage, isRanDOMImage } from './utility.js';
 
 const { createApp } = Vue;
 createApp({
@@ -11,10 +11,14 @@ createApp({
         return {
             message: 'Hello world!!!',
             white: "text-white",
-            image1: isRandomImage(500, 500, "random"),
-            image2: isRanDOMImage(500, 500)
+            color : "gold",
+            image1: isRandomImage(300, 300, "random"),
+            image2: isRanDOMImage(300, 300)
         };
     },
     methods: {
+        changeColor() {
+            this.color = this.color === "gold" ? "blue" : "gold"
+        }
     }
 }).mount('#app');

@@ -29,8 +29,8 @@
 <div id="app" class="ms_screen text-center">
     <h1 :class="white">Vue JS</h1>
     <div class="card ms_card ">
-        <h2>{{message}}</h2>
-        <div class="d-flex">
+        <h2 :style="{color : color}" @click="changeColor" class="ms_pointer">{{message}}</h2>
+        <div class="d-flex gap-5 m-5  ">
             <div v-html="image1"></div>
             <div>
                 <img :src="image2" alt="random">
