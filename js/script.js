@@ -19,6 +19,12 @@ createApp({
     methods: {
         changeColor() {
             this.color = this.color === "gold" ? "blue" : "gold"
+        },
+        newRandomImage () {
+            this.image1 = isRandomImage(300, 300, "random")
+        },
+        newRanDOMImage () {
+            this.image2 = isRanDOMImage(300, 300)
         }
     }
 }).mount('#app');

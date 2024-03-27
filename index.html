@@ -28,12 +28,16 @@
 </head>
 <div id="app" class="ms_screen text-center">
     <h1 :class="white">Vue JS</h1>
-    <div class="card ms_card ">
+    <div class="card ms_card">
         <h2 :style="{color : color}" @click="changeColor" class="ms_pointer">{{message}}</h2>
-        <div class="d-flex gap-5 m-5  ">
-            <div v-html="image1"></div>
+        <i class="fas fa-arrow-up"></i>
+        <h5>CLICK ME!</h5>
+        <div class="d-flex gap-5 m-3">
+            <div v-html="image1 + '<div>(click me)</div><div>(not optimal)</div>'" @click="newRandomImage" class="ms_pointer"></div>
             <div>
-                <img :src="image2" alt="random">
+                <img :src="image2" alt="random" @click="newRanDOMImage" class="ms_pointer">
+                <p>(click me)</p>
+                <p>P.S. optimal</p>
             </div>
         </div>
     </div>
