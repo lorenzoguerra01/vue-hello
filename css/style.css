@@ -43,11 +43,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .ms_card {
     height: 80vh !important;
     width: 80%;
     overflow: auto;
+    justify-content: center;
+    align-items: center;
+
 }
 .ms_box {
     border: 1px solid black;

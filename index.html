@@ -26,9 +26,19 @@
     <!-- collegamento google font  -->
 
 </head>
-    <div id="app" class="ms_card">
-        <h1>{{message}}</h1>
+<div id="app" class="ms_screen text-center">
+    <h1 :class="white">Vue JS</h1>
+    <div class="card ms_card ">
+        <h2>{{message}}</h2>
+        <div class="d-flex">
+            <div v-html="image1"></div>
+            <div>
+                <img :src="image2" alt="random">
+            </div>
+        </div>
     </div>
+</div>
+
 <body>
 </body>
 
